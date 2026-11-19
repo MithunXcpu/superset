@@ -1,0 +1,275 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+always_filter_main_dttm: false
+cache_timeout: null
+catalog: null
+columns:
+- advanced_data_type: null
+  column_name: data_label
+  description: SYNTHETIC DEMO — not a real customer or deployment
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: TEXT
+  verbose_name: null
+- advanced_data_type: null
+  column_name: hourly_rate_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: annual_platform_cost_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: implementation_cost_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: go_live_date
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: DATE
+  verbose_name: null
+- advanced_data_type: null
+  column_name: tickets_deflected
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: BIGINT
+  verbose_name: null
+- advanced_data_type: null
+  column_name: hours_saved
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: months_after
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: BIGINT
+  verbose_name: null
+- advanced_data_type: null
+  column_name: labor_value_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: platform_cost_in_window_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: investment_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: net_value_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: roi_pct
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: payback_months
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: avg_cost_before_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: avg_cost_after_usd
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+- advanced_data_type: null
+  column_name: adoption_pct
+  description: null
+  expression: null
+  extra: null
+  filterable: true
+  groupby: true
+  is_active: true
+  is_dttm: false
+  python_date_format: null
+  type: NUMERIC
+  verbose_name: null
+database_uuid: 11111111-1111-4111-8111-111111111111
+description: One-row sample business case. SYNTHETIC DEMO — not a real customer or
+  deployment
+extra: null
+filter_select_enabled: true
+main_dttm_col: null
+metrics:
+- currency: null
+  d3format: ',.0f'
+  description: null
+  expression: SUM(tickets_deflected)
+  extra: null
+  metric_name: tickets_deflected
+  metric_type: null
+  verbose_name: tickets_deflected
+  warning_text: null
+- currency: null
+  d3format: ',.0f'
+  description: null
+  expression: SUM(hours_saved)
+  extra: null
+  metric_name: hours_saved
+  metric_type: null
+  verbose_name: hours_saved
+  warning_text: null
+- currency: null
+  d3format: ',.1f'
+  description: null
+  expression: MAX(roi_pct)
+  extra: null
+  metric_name: roi_pct
+  metric_type: null
+  verbose_name: roi_pct
+  warning_text: null
+- currency: null
+  d3format: ',.1f'
+  description: null
+  expression: MAX(payback_months)
+  extra: null
+  metric_name: payback_months
+  metric_type: null
+  verbose_name: payback_months
+  warning_text: null
+normalize_columns: false
+offset: 0
+schema: public
+sql: null
+table_name: v_business_case
+template_params: null
+uuid: 22222222-2222-4222-8222-222222222201
+version: 1.0.0

@@ -17,6 +17,45 @@ specific language governing permissions and limitations
 under the License.
 -->
 
+# AI Deployment ROI & Business Case
+
+This fork adds a self-contained demo for value engineers, AI deployment and
+adoption leads, and customer success managers who need a business-case page
+for an AI agent rollout: tickets deflected, hours saved, cost per resolution,
+adoption by team, payback, and ROI.
+
+The data is synthetic and labeled
+`SYNTHETIC DEMO — not a real customer or deployment`. It is not a customer
+result. Superset core is unchanged. The add-on lives in
+[`ai_deployment_roi/`](ai_deployment_roi/README.md).
+
+Postgres holds the seed and the views. Superset imports a v1 dashboard export
+and charts those views. `narrative.py` reads the same views and asks NVIDIA's
+OpenAI-compatible API (`https://integrate.api.nvidia.com/v1`, model
+`meta/llama-3.3-70b-instruct`, key in `NVIDIA_API_KEY`) for a one-page
+markdown summary. With no key, or when `LLM_PROVIDER=mock`, it prints an
+offline template instead. See `ai_deployment_roi/.env.example`.
+
+Run it from `ai_deployment_roi/`:
+
+```bash
+docker compose up
+```
+
+Then open http://localhost:8088 (local demo login `admin` / `admin`) and the
+dashboard **AI Deployment ROI & Business Case (Synthetic)**. Draft the
+one-pager without a key:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+python narrative.py --offline
+```
+
+Details, formulas, and the sample totals are in
+[ai_deployment_roi/README.md](ai_deployment_roi/README.md).
+
 # Superset
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/license/apache-2-0)
