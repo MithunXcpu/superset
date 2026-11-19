@@ -538,6 +538,11 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 "superset/translations/utils.py" = ["TID251"]
 "superset/extensions/__init__.py" = ["TID251"]
 "superset/utils/json.py" = ["TID251"]
+# Standalone demo. It does not import Superset, so stdlib json is correct,
+# the seed renderer writes static SQL, and the narrative client calls HTTPS.
+"ai_deployment_roi/**/*.py" = ["TID251"]
+"ai_deployment_roi/metrics.py" = ["TID251", "S608"]
+"ai_deployment_roi/llm_client.py" = ["TID251", "S310"]
 "docker/*" = ["I"]  # Docker config files have non-standard imports that vary by environment
 "superset/db_engine_specs/lib.py" = ["E501"]  # Database config file with long description strings
 

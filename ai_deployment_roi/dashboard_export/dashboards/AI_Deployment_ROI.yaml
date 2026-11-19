@@ -1,0 +1,236 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+certification_details: null
+certified_by: null
+css: ''
+dashboard_title: AI Deployment ROI & Business Case (Synthetic)
+description: SYNTHETIC DEMO — not a real customer or deployment Charts cover adoption,
+  hours saved, cost per resolution, payback, and ROI for a sample AI-agent rollout.
+metadata:
+  timed_refresh_immune_slices: []
+  expanded_slices: {}
+  refresh_frequency: 0
+  color_scheme: supersetColors
+  cross_filters_enabled: false
+  native_filter_configuration: []
+position:
+  DASHBOARD_VERSION_KEY: v2
+  ROOT_ID:
+    id: ROOT_ID
+    type: ROOT
+    children:
+    - GRID_ID
+  GRID_ID:
+    id: GRID_ID
+    type: GRID
+    children:
+    - ROW-banner
+    - ROW-kpis
+    - ROW-trend
+    - ROW-cost
+    parents:
+    - ROOT_ID
+  HEADER_ID:
+    id: HEADER_ID
+    type: HEADER
+    meta:
+      text: AI Deployment ROI & Business Case (Synthetic)
+  ROW-banner:
+    id: ROW-banner
+    type: ROW
+    children:
+    - MARKDOWN-banner
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  MARKDOWN-banner:
+    id: MARKDOWN-banner
+    type: MARKDOWN
+    meta:
+      code: '**SYNTHETIC DEMO — not a real customer or deployment**
+
+
+        Sample pack for an AI-agent rollout business case. Go-live in the seed is
+
+        2025-07-01. Labor value uses the $85 hourly rate in `program_assumptions`.
+
+        Hours saved after go-live are deflected tickets times an assumed handle-time
+
+        (15–30 minutes, depending on the team). ROI and payback use the formulas in
+
+        `ai_deployment_roi/README.md`. Replace the seed before using this with a customer.
+
+        '
+      height: 24
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-banner
+  ROW-kpis:
+    id: ROW-kpis
+    type: ROW
+    children:
+    - CHART-tickets
+    - CHART-hours
+    - CHART-roi
+    - CHART-payback
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  ROW-trend:
+    id: ROW-trend
+    type: ROW
+    children:
+    - CHART-monthly
+    - CHART-adoption
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  ROW-cost:
+    id: ROW-cost
+    type: ROW
+    children:
+    - CHART-cost
+    - CHART-table
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  CHART-tickets:
+    id: CHART-tickets
+    type: CHART
+    children: []
+    meta:
+      chartId: 301
+      height: 42
+      sliceName: Tickets deflected (after go-live)
+      uuid: 33333333-3333-4333-8333-333333333301
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-kpis
+  CHART-hours:
+    id: CHART-hours
+    type: CHART
+    children: []
+    meta:
+      chartId: 302
+      height: 42
+      sliceName: Hours saved (after go-live)
+      uuid: 33333333-3333-4333-8333-333333333302
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-kpis
+  CHART-roi:
+    id: CHART-roi
+    type: CHART
+    children: []
+    meta:
+      chartId: 303
+      height: 42
+      sliceName: Sample ROI %
+      uuid: 33333333-3333-4333-8333-333333333303
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-kpis
+  CHART-payback:
+    id: CHART-payback
+    type: CHART
+    children: []
+    meta:
+      chartId: 304
+      height: 42
+      sliceName: Sample payback (months)
+      uuid: 33333333-3333-4333-8333-333333333304
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-kpis
+  CHART-monthly:
+    id: CHART-monthly
+    type: CHART
+    children: []
+    meta:
+      chartId: 305
+      height: 50
+      sliceName: Hours saved by month
+      uuid: 33333333-3333-4333-8333-333333333305
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-trend
+  CHART-adoption:
+    id: CHART-adoption
+    type: CHART
+    children: []
+    meta:
+      chartId: 306
+      height: 50
+      sliceName: Adoption by team (latest month)
+      uuid: 33333333-3333-4333-8333-333333333306
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-trend
+  CHART-cost:
+    id: CHART-cost
+    type: CHART
+    children: []
+    meta:
+      chartId: 307
+      height: 50
+      sliceName: Cost per resolution, before vs after
+      uuid: 33333333-3333-4333-8333-333333333307
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-cost
+  CHART-table:
+    id: CHART-table
+    type: CHART
+    children: []
+    meta:
+      chartId: 308
+      height: 50
+      sliceName: Team totals by phase
+      uuid: 33333333-3333-4333-8333-333333333308
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-cost
+published: true
+slug: ai-deployment-roi-synthetic
+uuid: 44444444-4444-4444-8444-444444444444
+version: 1.0.0
